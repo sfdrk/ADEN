@@ -1,0 +1,70 @@
+footer {
+  background-color: $darkBlue;
+  padding: 7rem 0 2rem 7rem;
+  .footer-container {
+    address {
+      color: white;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    .contact {
+      padding: 2rem 0;
+      border-bottom: 1px solid $lineColor;
+      text-align: center;
+      .policy {
+        padding-top: 2rem;
+        a {
+          padding: 0 2rem;
+        }
+        a:hover {
+          color: $vibrantBlue;
+        }
+      }
+      a {
+        color: white;
+      }
+      a:hover {
+        color: $vibrantBlue;
+      }
+    }
+  }
+  a.get {
+    display: block;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 4rem 0rem 1rem 10rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  footer {
+    padding-left: 0;
+    a.get {
+      font-size: 4rem;
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  footer {
+    .contact {
+      .policy {
+        display: none;
+      }
+    }
+    a.get {
+      font-size: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  footer {
+    padding: 2rem 0rem 0rem 0rem;
+    a.get {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,275 @@
+main {
+  padding-left: 7rem;
+  position: relative;
+  .container {
+    position: relative;
+  }
+  .header-section {
+    a.brand-logo {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      p {
+        display: flex;
+        align-items: center;
+        color: $darkBlue;
+        margin-right: 1rem;
+      }
+      span {
+        color: $vibrantBlue;
+        font-weight: 900;
+        margin-left: 0.5rem;
+        font-size: 1.25rem;
+      }
+      img {
+        max-width: 10rem;
+      }
+    }
+  }
+
+  .vertical-lines {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    .line {
+      margin-right: 17rem;
+      width: 0.2px;
+      background-color: #aeaeae;
+      height: 38.5rem;
+    }
+  }
+  .hero-layout {
+    position: relative;
+    margin: 4rem 0;
+    .hero-content {
+      font-family: $generalFont;
+      font-size: 8rem;
+      font-weight: 600;
+      line-height: 8rem;
+      color: $darkBlue;
+      .blk {
+        color: $vibrantBlue;
+        padding-left: 2%;
+      }
+      .tech {
+        color: $vibrantBlue;
+        padding-left: 10%;
+      }
+    }
+    .hero-sub-content {
+      max-width: 21rem;
+      position: absolute;
+      top: 5%;
+      right: 0;
+      color: $darkBlue;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .hero-img {
+      position: absolute;
+      max-width: 20rem;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+.collage-layout {
+  padding: 5rem 0rem 5rem 7rem;
+  background-color: $darkBlue;
+  position: relative;
+  .collage-heading {
+    color: $vibrantBlue;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .direction-line {
+    width: 2px;
+    background-color: white;
+    height: 5rem;
+  }
+
+  .ftr-box {
+    padding: 1rem;
+    margin: 1rem 0;
+    height: 10rem;
+    @include alignCenter;
+    flex-direction: column;
+    .ftr-head {
+      color: $vibrantBlue;
+      font-size: 1.25rem;
+      // font-weight: 900;
+    }
+    .ftr-content {
+      padding-top: 1rem;
+      color: white;
+      text-align: center;
+      max-width: 27rem;
+    }
+  }
+  .ftr-box:hover {
+    border: 1px solid $vibrantBlue;
+    border-radius: 5px;
+  }
+}
+
+.cards-layout {
+  padding-left: 10rem;
+  margin: 8rem 0;
+  .cards-heading {
+    font-size: 2rem;
+    color: $darkBlue;
+    text-align: center;
+    font-weight: 700;
+    line-height: 2.5rem;
+    position: relative;
+    bottom: 3.2rem;
+    span {
+      color: $vibrantBlue;
+    }
+  }
+  .card {
+    align-items: center;
+    padding: 2rem 1rem;
+    box-shadow: 0px 0px 8px 5px #88888814;
+    gap: 1rem;
+    transition: all 1s;
+    border-radius: 10px;
+    max-height: 13rem;
+    height: 100%;
+    justify-content: center;
+    .card-content {
+      font-size: 1.125rem;
+      color: $darkBlue;
+      font-weight: 700;
+    }
+    img {
+      width: 25%;
+    }
+    a {
+      display: flex;
+      align-self: end;
+      text-decoration: none;
+      color: $vibrantBlue;
+    }
+  }
+  .card:hover {
+    box-shadow: 0px 10px 99px #00000033;
+  }
+}
+@media screen and (max-width: 1399px) {
+  main {
+    .hero-layout {
+      .hero-content {
+        font-size: 6rem;
+        line-height: 7rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1120px) {
+  main {
+    .vertical-lines {
+      display: none;
+    }
+    .hero-layout {
+      .hero-content {
+        font-size: 5rem;
+        line-height: 5rem;
+      }
+      .hero-sub-content {
+        padding-top: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    .hero-layout {
+      .hero-sub-content {
+        position: static;
+      }
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  nav {
+    display: none;
+  }
+  main {
+    padding-left: 0;
+    .hero-layout {
+      margin: 2rem 0;
+      .hero-content {
+        text-align: center;
+        font-size: 4rem;
+        line-height: 4rem;
+        .tech {
+          padding-left: 0;
+        }
+      }
+      .hero-sub-content {
+        text-align: center;
+        font-size: 1rem;
+        max-width: 20rem;
+        margin: 0 auto;
+      }
+    }
+  }
+  .collage-layout {
+    padding-left: 0;
+  }
+  .cards-layout {
+    padding-left: 0;
+    margin: 4rem 0;
+    .row {
+      gap: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  main {
+    .hero-layout {
+      margin: 2rem 0;
+      .hero-content {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+  .cards-layout {
+    margin: 4rem 0;
+    .row {
+      gap: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  main {
+    .header-section {
+      a.brand-logo img {
+        width: 8rem;
+      }
+      p {
+        display: none !important;
+      }
+    }
+    .hero-layout {
+      margin: 1rem 0;
+      .hero-sub-content {
+        padding-top: 1rem;
+      }
+    }
+  }
+  .collage-layout {
+    padding: 1rem 0;
+  }
+  .cards-layout {
+    margin: 2rem 0;
+    .row {
+      gap: 1rem;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+nav {
+  max-width: 7rem;
+  width: 100%;
+  background-color: $darkBlue;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 2px solid $lineColor;
+  padding-top: 2rem;
+  z-index: 9;
+
+  .direction-block {
+    margin-top: 8rem;
+    p {
+      transform: rotate(90deg);
+      color: white;
+    }
+    .direction-line {
+      width: 1px;
+      background-color: $lineColor;
+      height: 10rem;
+      margin-top: 3rem;
+      margin-left: 3.5rem;
+    }
+    img {
+      width: 20px;
+      transform: rotate(90deg);
+      margin-left: 2.9rem;
+      margin-top: 1rem;
+    }
+  }
+  .side-logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1.1rem;
+    img {
+      width: 50%;
+    }
+  }
+}
